@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1809031226339658}
+  m_IsPrefabParent: 1
+--- !u!1 &1809031226339658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4460035099044058}
+  - component: {fileID: 114834624603982874}
+  - component: {fileID: 95523335837809292}
+  - component: {fileID: 114835212601218914}
+  m_Layer: 0
+  m_Name: StorySystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4460035099044058
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809031226339658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95523335837809292
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809031226339658}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 14aa058d1cf37f144a8defd7c657011a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114834624603982874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809031226339658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6060c8a862f53034e891bf9e282b7e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 0}
+  debugController: {fileID: 0}
+  battle: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 7b749c0b842fefb4985ea54bd5ea4aa0, type: 3}
+  text: Hello
+  chapter1: {fileID: 114835212601218914}
+  battle1Enemies:
+  - {fileID: 0}
+  currBattle: 0
+--- !u!114 &114835212601218914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809031226339658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe7c89fe24d751438052afefed389ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 0}
+  backgroundPicture: {fileID: 2800000, guid: 4e98db623d9b44d4bb48f57e3ec75692, type: 3}
+  dialogueUI: {fileID: 0}
+  playerTrans: {fileID: 0}
+  playerPic: {fileID: 21300000, guid: 7b749c0b842fefb4985ea54bd5ea4aa0, type: 3}
+  allyTrans: {fileID: 0}
+  allyPic: {fileID: 21300000, guid: 7b749c0b842fefb4985ea54bd5ea4aa0, type: 3}
+  burglarTrans: {fileID: 0}
+  burglarPic: {fileID: 21300000, guid: aacf18cbbdd6cd54f8e65517c6368fdc, type: 3}
+  sidewalkMovement: {x: 5, y: -1.6, z: 0}
+  helpMovement: {x: -2.5, y: -1.6, z: 0}
+  engageMovement: {x: -2.5, y: 0, z: 0}
